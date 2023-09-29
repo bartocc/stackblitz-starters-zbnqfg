@@ -8,6 +8,9 @@
   "repository": "",
   "license": "MIT",
   "author": "",
+  "peerDependencies": {
+    "@glimmer/component": "*"
+  },
   "exports": {
     ".": {
       "types": "./declarations/index.d.ts",
@@ -110,6 +113,9 @@
   "ember-addon": {
     "version": 2,
     "type": "addon",
-    "main": "addon-main.cjs"
+    "main": "addon-main.cjs",
+    "app-js": {
+      "./components/foo.js": "./dist/_app_/components/foo.js"
+    }
   }
 }
